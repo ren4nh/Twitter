@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Twitter - Principal</title>
+        <link rel="stylesheet" type="text/css" href="css/stylePrincipal.css"/> 
+    </h:head>
+    <h:body>
+
+        <!-- Menu topo -->
+
+        <div id="topo">
+            <div id="topoMenu">
+                <h:form id="formMenu">
+                    <table border="0" cellpadding="2" cellspacing="5" align="center">
+                        <tr>
+                            <td><h:commandLink action="#{principalMNG.home}" value="Home"/></td>
+                            <td><h:commandLink action="#{principalMNG.carregaPerfil}" value="Perfil"/></td>
+                            <td><h:inputText value="#{principalMNG.busca}"></h:inputText><h:commandButton action="#{principalMNG.buscar}" value="Buscar"/></td>
+                            <td><h:commandLink action="#{principalMNG.logout}" value="Sair"/></td>
+                        </tr>
+                    </table>
+                </h:form>
+            </div>
+        </div>   
+
+        <!-- Menu meio -->
+
+        <div id="meio">
+            <div id="meioUsuario">
+                <div id="usuarioFoto">
+                    Foto
+                </div>
+                <div id="usuarioInformacoes">
+                    <table border="0" align="center" cellspacing="4">
+                        <tbody>
+                            <tr>
+                                <td>Seguindo</td><td>Twitadas</td>
+                            </tr>
+                            <tr>
+                                <td align="center"><h:outputText value="#{usuarioMNG.numUsuarios}"/></td><td align="center"><h:outputText value="#{mensagensMNG.numMensagem}"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="meioUsuarioTwitada">
+                    <h:form>
+                        <h:inputTextarea cols="32" rows="6" id="twitada" value="#{mensagensMNG.descricao}"></h:inputTextarea>
+                        <div id="btTwitar">
+                            <h:commandButton id="botaoTwitar" value="Twitar" action="#{mensagensMNG.save}"/>
+                        </div>
+                    </h:form> 
+                </div>
+            </div>
+            <div id="meioSeguidores">
+                <h:dataTable value="#{usuarioMNG.lista}" var="seg">
+                    <h:column>
+                        <h:outputText value="#{seg. nome}"/>
+                    </h:column>
+                </h:dataTable>
+            </div>
+            <div id="meioMensagens">
+                <h:dataTable value="#{mensagensMNG.lista}" var="msg">
+                    <h:column>
+                        <h:outputText value="#{msg.usuario.apelido}"/> - <h:outputText value="#{msg.descricao}"/>
+                    </h:column>
+                </h:dataTable>
+            </div>
+        </div>
+    </h:body>
+</html>
+

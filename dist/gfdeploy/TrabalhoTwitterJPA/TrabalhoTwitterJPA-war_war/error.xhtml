@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:define name="content">
+        <div class="erroBox">
+            <br/>
+            <f:view>
+                <h:form id="erro">
+                    <h:panelGrid columns="2" border="0">
+                        <h:outputLabel value="Erro geral"/>
+                        <br/>
+                        <h:outputLabel value=""/>
+                        <br/>
+                        <h:outputLabel value=""/>
+                    </h:panelGrid>
+                    <h:commandLink id="submit" styleClass="links" value="" action="sair"/>
+                    <h:messages errorClass="error" showDetail="true"/>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+
+</html>
+

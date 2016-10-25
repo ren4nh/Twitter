@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Twitter</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/> 
+    </h:head>
+    <h:body>
+        <div class="topo"></div>
+        <div class="menuLogin">
+            <div class="tabela1">
+                <h:form class="formLogin" id="formLogin">
+                    <table border="0">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Login</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Email</td>
+                                <td><h:inputText id="txtEmail" value="#{usuarioMNG.email}"></h:inputText></td>
+                            </tr>
+                            <tr>
+                                <td>Senha</td>
+                                <td><h:inputSecret id="txtSenha" value="#{usuarioMNG.senha}"></h:inputSecret></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><h:commandButton id="botaoEntrar" value="Entrar" action="#{usuarioMNG.valida}"></h:commandButton></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </h:form>
+            </div>
+        </div>
+        <div class="menuCadastro">
+            <h:form id="formCadastro">
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Cadastro para novos usuarios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome Completo</td>
+                            <td><h:inputText id="txtNome" value="#{cadastroMNG.nome}"/></td>
+                        </tr>
+                        <tr>
+                            <td>Apelido</td>
+                            <td><h:inputText id="txtApelido" value="#{cadastroMNG.apelido}"/></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td><td><h:inputText id="txtEmail" value="#{cadastroMNG.email}"/></td>
+                        </tr>
+                        <tr>
+                            <td>Senha</td><td><h:inputSecret id="txtSenha" value="#{cadastroMNG.senha}"/></td>
+                        </tr>
+                        <tr>
+                            <td>Repita a senha</td><td><h:inputSecret id="txtSenha2" value="#{cadastroMNG.senha2}"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"><h:commandButton class="botao" id="botaoCadastrar" value="Cadastrar!" action="#{cadastroMNG.save}"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h:form>
+        </div>
+    </h:body>
+</html>
+

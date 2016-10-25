@@ -1,0 +1,46 @@
+/* 
+    Document   : style
+    Created on : 12/11/2012, 09:40:37
+    Author     : mdx67
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+    background-image: url(nuvem.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.mostraResto{
+    margin-top: 130px;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+}
+.menuLogin{
+    position: inherit;
+    margin: 50px auto auto auto;    
+    width: 264px;
+    height: 120px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    font: menu;
+    font-size: 12px;
+}
+div.menuCadastro{
+    position: inherit;
+    margin: 10px auto; 
+    width: 264px;
+    height: 210px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    font: menu;
+    font-size: 12px;
+}
+

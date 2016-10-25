@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Twitter - Buscar</title>
+        <link rel="stylesheet" type="text/css" href="css/stylePefil.css"/> 
+    </h:head>
+    <h:body>
+        <!-- Menu topo -->
+
+        <div id="topo">
+            <div id="topoMenu">
+                <h:form id="formMenu">
+                    <table border="0" cellpadding="2" cellspacing="5" align="center">
+                        <tr>
+                            <td><h:commandLink action="home" value="Home"/></td>
+                            <td><h:commandLink action="perfil" value="Perfil"/></td>
+                            <td><h:commandLink action="buscar" value="Buscar"/></td>
+                            <td><h:commandLink action="#{principalMNG.logout}" value="Sair"/></td>
+                        </tr>
+                    </table>
+                </h:form>
+            </div>
+        </div>   
+
+        <!-- Menu meio -->
+
+        <div id="menuPerfil">
+            <h:dataTable value="#{principalMNG.lista}" var="usuario">
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="nome"/>
+                    </f:facet>
+                    <h:form>
+                        <h:outputLabel value="#{usuario.apelido}"/>
+                        <h:commandLink action="#{perfilMNG.buscaUser}"/>
+                    </h:form>
+                </h:column>
+            </h:dataTable>
+        </div>
+    </h:body>
+</html>
+

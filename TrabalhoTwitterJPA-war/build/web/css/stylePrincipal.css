@@ -1,0 +1,115 @@
+/* 
+    Document   : cssPrincipal
+    Created on : 18/11/2012, 13:31:57
+    Author     : mdx67
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body{
+    background-image: url(nuvem.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#topoMenu{
+    background-color: rgba(255, 255, 255, 0.3); 
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    margin: 0 auto;    
+    width: 600px;
+    height: 100%;
+    position: inherit;
+}
+#meio{ /* principal */
+    width: 600px;
+    height: 620px;
+    margin: 0 auto;
+    position: inherit;
+}
+#meioUsuario{ /* principal */
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 600px;
+    height: 100px;
+    margin-top: 10px;
+}
+#meioMensagens{
+    background-color: rgba(255, 255, 255, 0.3); 
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 390px;
+    height: 490px;
+    margin-left: 210px;
+    margin-top: 120px;
+    position: absolute;
+}
+#meioUsuarioNome{ /* principal */
+    width: 280px;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+}
+#usuarioFoto{ /* principal */ 
+    background-color: rgba(255, 255, 255, 0.3); 
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 15px;
+    position: absolute;
+}
+#usuarioInformacoes{ /* principal */
+    width: 200px;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: 15px;
+    position: absolute;
+}
+#meioUsuario{
+    background-color: rgba(255, 255, 255, 0.3); 
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 600px;
+    height: 100px;
+    margin-top: 10px;
+    position: absolute;
+}
+#meioSeguidores{
+    background-color: rgba(255, 255, 255, 0.3); 
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 200px;
+    height: 490px;
+    margin-top: 120px;
+    position: absolute;
+}
+#meioUsuarioTwitada{
+    width: 330px;
+    height: 100px;
+    margin-left: 260px;
+    position: absolute;
+}
+#btTwitar{
+    position: absolute;
+    margin-left: 276px;
+    margin-top: -25px;    
+}
+#twitada{
+    width: 100%;
+    height: 100%;
+}
+#alinhandoDireita{
+    text-align: right;
+}

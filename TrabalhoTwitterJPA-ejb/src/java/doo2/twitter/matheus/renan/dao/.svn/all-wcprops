@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/20/trunk/TrabalhoTwitterJPA/TrabalhoTwitterJPA-ejb/src/java/doo2/twitter/matheus/renan/dao
+END
+UsuarioDAORemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/20/trunk/TrabalhoTwitterJPA/TrabalhoTwitterJPA-ejb/src/java/doo2/twitter/matheus/renan/dao/UsuarioDAORemote.java
+END
+UsuarioDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/20/trunk/TrabalhoTwitterJPA/TrabalhoTwitterJPA-ejb/src/java/doo2/twitter/matheus/renan/dao/UsuarioDAO.java
+END
+MensagemDAORemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/20/trunk/TrabalhoTwitterJPA/TrabalhoTwitterJPA-ejb/src/java/doo2/twitter/matheus/renan/dao/MensagemDAORemote.java
+END
+MensagemDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/20/trunk/TrabalhoTwitterJPA/TrabalhoTwitterJPA-ejb/src/java/doo2/twitter/matheus/renan/dao/MensagemDAO.java
+END

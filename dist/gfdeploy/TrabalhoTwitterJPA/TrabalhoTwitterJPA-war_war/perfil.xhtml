@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Twitter - Perfil</title>
+        <link rel="stylesheet" type="text/css" href="css/stylePefil.css"/> 
+    </h:head>
+    <h:body>
+        <!-- Menu topo -->
+
+        <div id="topo">
+            <div id="topoMenu">
+                <h:form id="formMenu">
+                    <table border="0" cellpadding="2" cellspacing="5" align="center">
+                        <tr>
+                            <td><h:commandLink action="#{principalMNG.home}" value="Home"/></td>
+                            <td><h:commandLink action="#{principalMNG.carregaPerfil}" value="Perfil"/></td>
+                            <td><h:inputText value="#{principalMNG.busca}"></h:inputText><h:commandButton action="#{principalMNG.buscar}" value="Buscar"/></td>
+                            <td><h:commandLink action="#{principalMNG.logout}" value="Sair"/></td>
+                        </tr>
+                    </table>
+                </h:form>
+            </div>
+        </div>   
+
+        <!-- Menu meio -->
+
+        <div id="menuPerfil">
+            <div id="menuInterno">
+                <h:form>
+                    <div id="informacoesPerfil">
+                        <table id="tabelaPerfil">
+                            <tbody>
+                                <tr>
+                                    <td colspan = "2" ><h:outputLabel value="#{principalMNG.usuario.nome}"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Seguindo</td><td>#{perfilMNG.numSeguindo}</td>
+                                </tr>
+                                <tr>
+                                    <td>Twitadas</td><td>#{mensagensMNG.numMensagem}</td>
+                                </tr>
+                                <tr> 
+                                    <td colspan="2"><h:commandButton action="#{perfilMNG.seguir}" value="Seguir" rendered="#{perfilMNG.testaSeguir}"/><h:commandButton action="#{perfilMNG.deixarSeguir}" value="Deixar de seguir" rendered="#{perfilMNG.ativa}"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </h:form>
+            </div>
+            <div id="mostraTwitadas">
+
+                <h:dataTable value="#{mensagensMNG.msgPerfil}" var="msg">
+                    <h:column>
+                        <h:outputText value="#{msg.descricao}"/>
+                    </h:column>
+                </h:dataTable>
+            </div>
+        </div>
+    </h:body>
+</html>
+

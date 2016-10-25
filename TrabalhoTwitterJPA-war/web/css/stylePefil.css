@@ -1,0 +1,72 @@
+/* 
+    Document   : stylePefil
+    Created on : 18/11/2012, 14:26:25
+    Author     : mdx67
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+    background-image: url(nuvem.jpg);
+    background-repeat: no-repeat;
+    background-position: top;   
+}
+
+#topoMenu{
+    background-color: rgba(255, 255, 255, 0.4);
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    margin: 0 auto;    
+    width: 600px;
+    height: 100%;
+    position: inherit;
+}
+
+
+#menuPerfil{
+    position: inherit;
+    margin: 10px auto;
+    width: 600px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    font: menu;
+    font-size: 12px;
+}
+
+#fotoPerfil{
+    background-color: rgba(255, 255, 255, 0.2);
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+}
+#informacoesPerfil{
+    background-color: rgba(255, 255, 255, 0.2);
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 200px; 
+    height: 100px;
+    margin-left: 160px;
+    margin-top: 20px;
+    position: absolute;   
+}
+#tabelaPerfil{
+    position: inherit;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#mostraTwitadas{
+    margin-top: 130px;
+    margin-left: 10px;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+}
